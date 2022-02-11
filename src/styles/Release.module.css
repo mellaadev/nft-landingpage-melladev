@@ -6,6 +6,13 @@
     align-items: center;
 }
 
+@media (min-width: 966px) {
+    .release
+    {
+        gap: 10rem;
+    }
+}
+
 .release__contentbox
 {
     display: flex;
@@ -22,6 +29,7 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         gap: 5rem;
+        border-radius: 1.6rem;
     }
 }
 
@@ -67,6 +75,7 @@
 .release__image
 {
     clip-path: inset(0px 0px 220px 0px);
+    z-index: 1;
 }
 
 @media (min-width: 966px) {
@@ -103,7 +112,7 @@
     display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 966px) {
     .release__meta
     {
         position: absolute;
@@ -144,8 +153,9 @@
     content: '';
     border-radius: 100%;
     background: var(--rosa);
-    filter: blur(40rem);
+    filter: blur(20rem);
     position: absolute;
+    z-index: 0;
     top: -30rem;
     right: -10rem;
 }
@@ -153,7 +163,117 @@
 @media (min-width: 966px) {
     .release__circle
     {
+        top: unset;
         bottom: -30rem;
         right: -10rem;
+    }
+}
+
+.release__circle2
+{
+    width: 488px;
+    height: 488px;
+    content: '';
+    border-radius: 100%;
+    background: var(--naranja);
+    filter: blur(20rem);
+    position: absolute;
+    top: -30rem;
+    z-index: 0;
+    right: -10rem;
+}
+
+@media (min-width: 966px) {
+    .release__circle2
+    {
+        top: unset;
+        bottom: -30rem;
+        left: -10rem;
+    }
+}
+
+.releasecard
+{
+    display: flex;
+    flex-direction: column;
+    width: 351px;
+    height: 440px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.releasecard__image
+{
+    width: 100%;
+}
+
+.releasecard__texts
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    background-color: var(--dark);
+    border-bottom-left-radius: 1.6rem;
+    border-bottom-right-radius: 1.6rem;
+}
+
+.releasecard__first,
+.releasecard__second,
+.releasecard__third
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.releasecard__series
+{
+    color: var(--naranja);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: var(--medium);
+}
+
+.releasecard__bid
+{
+    color: var(--dark3);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: var(--medium);
+}
+
+.releasecard__name,
+.releasecard__pricetext
+{
+    font-weight: var(--medium);
+    color: var(--light2);
+    font-size: 2rem;
+}
+
+.releasecard__price
+{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.releasecard__id,
+.releasecard__timeleft
+{
+    font-weight: var(--regular);
+    font-size: 1.8rem;
+    color: var(--dark4);
+}
+
+.release__secondtext
+{
+    margin-top: 5rem;
+}
+
+@media (min-width: 966px) {
+    .release__secondtext
+    {
+        margin-top: 0;
     }
 }

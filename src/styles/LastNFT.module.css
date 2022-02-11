@@ -1,0 +1,142 @@
+.lastnft
+{
+    margin-top: 10rem;
+    border-top: 2px solid var(--light2);
+}
+
+.lastnft__grid
+{
+    display: flex;
+    flex-direction: column;
+    padding: 15rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .lastnft__grid
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 5rem;
+    }
+}
+
+.lastnft__texts
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .lastnft__texts
+    {
+        width: 80%;
+    }
+}
+
+.lastnft__pretitle
+{
+    color: var(--rosa);
+    font-size: 1.6rem;
+    font-weight: var(--bold);
+}
+
+.lastnft__heading
+{
+    font-size: 5.6rem;
+    font-weight: var(--black);
+}
+
+.lastnft__info
+{
+    font-weight: var(--regular);
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.lastnft__button
+{
+    border-radius: 100rem;
+    padding: 1rem;
+    font-size: 2rem;
+    padding: 1.3rem 3rem;
+    color: var(--dark);
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(60deg, var(--rojo), var(--rosa), var(--naranja));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.lastnft__image
+{
+    position: absolute;
+    bottom: 0;
+    right: -5rem;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .lastnft__image
+    {
+        bottom: 0;
+        right: 25rem;
+    }
+}
+
+.lastnft__circle
+{
+    width: 310px;
+    height: 310px;
+    content: '';
+    border-radius: 100%;
+    background: var(--rosa);
+    filter: blur(10rem);
+    position: absolute;
+    z-index: 0;
+    bottom: 20rem;
+    right: -15rem;
+}
+
+@media (min-width: 768px) {
+    .lastnft__circle
+    {
+        top: unset;
+        bottom: 10rem;
+        right: 20rem;
+        z-index: 0;
+    }
+}
+
+.lastnft__circle2
+{
+    width: 216px;
+    height: 216px;
+    content: '';
+    border-radius: 100%;
+    background: var(--naranja);
+    filter: blur(10rem);
+    position: absolute;
+    z-index: 0;
+    bottom: 10rem;
+    right: -5rem;
+}
+
+@media (min-width: 768px) {
+    .lastnft__circle2
+    {
+        top: unset;
+        bottom: 5rem;
+        right: 35rem;
+        z-index: 0;
+    }
+}
+

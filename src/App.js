@@ -5,6 +5,8 @@ import Upsell from './components/Upsell';
 import Brands from './components/Brands';
 import Auction from './components/Auction';
 import Release from './components/Release';
+import CardOther from './components/CardOther';
+import LastNFT from './components/LastNFT';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Brands />
       <Auction />
       <Release />
+      <CardOther />
+      <LastNFT />
     </Layout>
   );
 }
