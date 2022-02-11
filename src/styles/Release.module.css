@@ -1,0 +1,159 @@
+.release
+{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.release__contentbox
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 966px) {
+    .release__contentbox
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 5rem;
+    }
+}
+
+.release__bgorange
+{
+    background-color: var(--lightorange);
+}
+
+.release__bggreen
+{
+    background-color: var(--lightgreen);
+}
+
+.release__boximg
+{
+    display: grid;
+    place-items: center;
+}
+
+@media (min-width: 966px) {
+    .release__boximg
+    {
+        display: unset;
+        place-items: unset;
+        grid-column: 2 / 3;
+    }
+}
+
+.release__firstext
+{
+    margin-top: -20rem;
+}
+
+@media (min-width: 966px) {
+    .release__firstext
+    {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        margin: 0;
+    }
+}
+
+.release__image
+{
+    clip-path: inset(0px 0px 220px 0px);
+}
+
+@media (min-width: 966px) {
+    .release__image
+    {
+        position: absolute;
+        bottom: 0;
+        right: 20rem;
+        clip-path: inset(0px 0px 0px 0px);
+    }
+}
+
+.release__separador
+{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark);
+    position: absolute;
+    top: 39.8rem;
+    left: 0;
+    opacity: .08;
+}
+
+@media (min-width: 966px) {
+    .release__separador
+    {
+        display: none;
+    }
+}
+
+.release__meta
+{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .release__meta
+    {
+        position: absolute;
+        bottom: 5rem;
+        right: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+.release__series
+{
+    color: var(--rosa);
+    font-size: 1.2rem;
+    font-weight: var(--medium);
+}
+
+.release__name
+{
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: var(--medium);
+}
+
+.release__id
+{
+    font-weight: var(--regular);
+    font-size: 1.8rem;
+    color: var(--dark3);
+}
+
+.release__circle
+{
+    width: 488px;
+    height: 488px;
+    content: '';
+    border-radius: 100%;
+    background: var(--rosa);
+    filter: blur(40rem);
+    position: absolute;
+    top: -30rem;
+    right: -10rem;
+}
+
+@media (min-width: 966px) {
+    .release__circle
+    {
+        bottom: -30rem;
+        right: -10rem;
+    }
+}

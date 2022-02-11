@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Upsell from './components/Upsell';
 import Brands from './components/Brands';
 import Auction from './components/Auction';
+import Release from './components/Release';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Upsell />
       <Brands />
       <Auction />
+      <Release />
     </Layout>
   );
 }

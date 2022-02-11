@@ -1,0 +1,52 @@
+.releasetext
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.releasetext__heading
+{
+    font-weight: var(--medium);
+    font-size: 4rem;
+}
+
+.releasetext__texts
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    color: var(--dark2);
+    font-size: 2rem;
+    font-weight: var(--regular);
+    line-height: 1.6;
+}
+
+.releasetext__textmod
+{
+    font-weight: var(--medium);
+    text-decoration: underline;
+}
+
+.releasetext__check
+{
+    color: var(--rosa);
+    font-weight: var(--medium);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.releasetext__check::after
+{
+    content: '——>';
+    color: var(--rosa);
+}
+
+.releasetext__check:hover
+{
+    cursor: pointer;
+}
